@@ -40,6 +40,7 @@ public class CrapsGame
             System.out.println("Die 2: " + die2);
             System.out.println("Sum: " + crapsRoll);
 
+            // Check Craps and Natural Condition
             if (crapsRoll==2 || crapsRoll==3 || crapsRoll==12) {
                 System.out.println("Craps! You Lose! ");
                 win = false;
@@ -63,6 +64,7 @@ public class CrapsGame
                     System.out.println("Die 2: " + die2);
                     System.out.println("Sum: " + crapsRoll);
 
+                    // Check 7 and Made Point Condition
                     if (crapsRoll==7)
                     {
                         System.out.println("Got a seven and lost! ");
@@ -82,6 +84,7 @@ public class CrapsGame
                     }
                 }while(!finish);
             }
+            // Ask player to play again!
             do{
                 System.out.print("\nPlay Again? [Y/N]: ");
                 playAgainYN = in.nextLine();
